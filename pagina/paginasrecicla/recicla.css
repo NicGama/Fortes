@@ -1,0 +1,645 @@
+@font-face {
+    font-family: 'Squada One';
+    /*Fonte dos Titulos*/
+    src: url('/pagina/fontes/SquadaOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Suez One';
+    /*Fonte dos Botoes*/
+    src: url('/pagina/fontes/SuezOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SeoulNamsan';
+    /*Textos*/
+    src: url('/pagina/fontes/SeoulNamsanCondensed-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Share Tech';
+    /*Subtitulos*/
+    src: url('/pagina/fontes/ShareTech-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Skranji';
+    /*Textos Especiais*/
+    src: url('/pagina/fontes/Skranji-Regular.ttf');
+}
+
+/* Barra de navegação */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffd8;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #C9C67E;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo-name img {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 40px;
+    margin-right: 5px;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 4px 3px #0000001a;
+}
+
+
+.logo-re {
+    color: #12231B;
+    font-family: 'Squada One', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+
+.logo-conecta {
+    color: #7D4716;
+    font-family: 'Squada One', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Botao Reciclador*/
+.nav-button-recicla {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:1.4em;;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #204031;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button-recicla:hover {
+    background-color: #a8a665; 
+    color: #000000;
+}
+
+.button-back{
+    background-color: #DADA98;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size:1em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-back:hover {
+    background-color: #1f1e1c; 
+    color: #fafafa;
+}
+
+.nav-button-exit {
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    background-color: #580202;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button-exit:hover {
+    color: #ffffff;
+    background-color: #b82432;
+}
+
+
+
+
+
+
+/*PERFIL CSS*/
+.container-perfil {
+   background-color: #cece95;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 20px;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    min-width: 200px;
+    background-color: rgb(58, 112, 86, 0.44)   ;
+    color: white;
+    padding: 20px 0;
+    flex-shrink: 0;
+}
+
+.perfil-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-item-perfil {
+    padding: 10px 20px;
+}
+
+.menu-item-perfil.active {
+    background-color: #193126;
+}
+
+.content-perfil {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+.header-perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.breadcrumb {
+    color: #5c534a;
+    font-size: 0.9em;
+}
+
+.notificacao {
+    float: right;
+    font-size: 1.5em;
+}
+
+.perfil-info {
+    padding: 0;
+    border-radius: 0;
+}
+
+.avatar-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar-icone {
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #5c534a;
+    margin-right: 70px;
+}
+
+.info-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.btn-alterar-avatar {
+    color:#ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One';
+    background-color: #5c534a;
+    border-radius: 10px;
+    margin-left: 120px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c534a;
+}
+
+.form-group input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.password-input-group {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 400px;
+}
+
+.password-input-group input {
+    flex-grow: 1;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.toggle-password {
+    background-color: #f0f0e6;
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    color: #5c534a;
+    font-size: 1.1em;
+}
+
+.btn-alterar-dados {
+    color:#ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One';
+    background-color: #5c534a;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.edit-icon {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/*Mostrar Pontos de Coleta*/
+.container {
+    background-color: #cece95;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Suez one';
+}
+
+.add-btn {
+    background-color: #204031;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    font-size: 1.6em;
+    font-family: 'Suez one';
+    margin-bottom: 25px;
+    margin-left: 20px;
+    display: block;
+    max-width: fit-content;
+}
+
+.add-btn:hover {
+    color: #ffffff;
+    background-color: #12231B;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-card {
+    background-color: #f7f7dc;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.event-details {
+    width: 800px;
+    margin: 20px;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.event-details h1 {
+    color: #25211E;
+    font-size: 1.8em;
+    font-family: 'Squada One';
+    max-width: 800px;
+    word-break: break-word;
+}
+
+.event-details h2,
+.event-details p {
+    color: #25211E;
+    font-size: 1.5em;
+    font-family: 'Share Tech';
+    max-width: 800px;
+    word-break: break-word;
+}
+
+.button-alterar {
+    background-color: #204031;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-family: 'Suez One';
+    margin-left: auto;
+}
+
+.button-alterar:hover {
+    color: #fffefe;
+    background-color: #386e55;
+}
+
+.iframe {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+/*ADICIONAR PONTO*/
+
+.container-add-ponto {
+    background-color: #cece95;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 20px;
+    border: C9C67E 2px solid;
+    display: inline-block;
+}
+
+
+.input-grouprc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#label {
+    background-color: #12231B; 
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px 0 0 5px;
+    white-space: nowrap;
+    width: 150px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#checkbox {
+    margin-right: 10px;
+}
+
+.input-grouprc input[type="text"],
+.input-grouprc input[type="email"],
+.input-grouprc input[type="tel"],
+.input-grouprc input[type="date"],
+.input-grouprc input[type="password"],
+ .input-grouprc select {
+    padding: 15px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    width: 700px;
+    background-color: #f7f7f7;
+    font-family: 'suez one';
+}
+
+.registro-box button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #030503;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px; 
+}
+
+.registror-box button[type="submit"]:hover {
+    background-color: #2c3e29;
+}
+
+.registro-box .subtitle {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 0.95em;
+}
+
+.registro-box .subtitle a {
+    color: #3e503a;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.registro-box .subtitle a:hover {
+    text-decoration: underline;
+}
+
+.pos-navbar {
+    display:block;
+    margin: 15px;
+}
+
+.pos-navbar h2 {
+    color: #333;
+    margin: 5px ;
+}
+
+.button-voltar{
+    background-color: #7D4716;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size:1em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-voltar:hover {
+    background-color: #ffffff; 
+    color: #7D4716;
+    border: #000000 1px solid   ;
+}
+
+.button-voltar a {
+    color: #ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+}
+
+.button-voltar a:hover {
+    color: #7D4716;
+    background-color: #ffffff;
+    font-size: 1.3em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+}
+
+.button-voltar:visited {
+    background-color: #7D4716; 
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.form {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+    width: 800px;
+}
+
+.imagem {
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.button-add-ponto {
+    background-color: #204031;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size:1em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-add-ponto:hover {
+    background-color: #ffffff; 
+    color: #204031;
+}
+
+.button-cancelar {
+    background-color: #620C0C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 10px;
+    font-size:1em;
+    font-family: 'Suez One', serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.button-cancelar:hover {
+    background-color: #ffffff; 
+    color: #620C0C;
+}
+
+
+
+
+
+
+
+
+
+/*Site Responsivo*/
+
+@media (max-width: 768px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .navbar-right {
+
+        width: 100%;
+
+        justify-content: space-around;
+
+        margin-top: 10px;
+
+        display: none;
+
+    }
+
+}

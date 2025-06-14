@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Ponto</title>
+    <link rel="stylesheet" href="./recicla.css">
+    <link rel="icon" href="./../imagens/plantar.png" type="image/png">
+</head>
+
+<body>
+<header class="nav">
+        <div class="nav-left">
+            <div class="logo-name"><img src="./..//imagens/plantar.png" alt="logo_da_barra"></div>
+            <div class="logo-text">
+                <div class="logo-re">Re</div>
+                <div class="logo-conecta">Conecta</div>
+            </div>
+        </div>
+        <nav class="navbar-right">
+          <a href="./perfilrecicla.html" class="nav-button-recicla">Perfil</a>
+            <a href="./adicionarponto.html" class="nav-button-recicla">Você está aqui!</a>
+            <a href="./pontosdecoleta.html" class="nav-button-recicla">Pontos de coleta</a>
+
+            <a href="./../../index.html" class="nav-button-exit">Sair</a>     
+        </nav>
+    </header>
+    </div>
+
+    <main>
+
+        <div class="pos-navbar">
+            <h2>Alterar ponto</h2>
+            <br>
+            <button class="button-voltar" onclick="window.location.href='./pontosdecoleta.html'">Voltar</button>
+        </div>
+
+
+        <div class="container-add-ponto">
+            <div class="form">
+
+                <div class="input-grouprc">
+                    <label id="label" for="nomelocal">Nome</label>
+                    <input type="text" id="nomelocal" placeholder="Nome do ponto de coleta" required>
+                </div>
+
+                <div class="input-grouprc">
+                    <label id="label" for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Rua, Av, N, CEP" required>
+                </div>
+
+                <div class="input-grouprc">
+                    <label id="label" for="horariofunc">Horário func.</label>
+                    <input type="text" id="horariofunc" placeholder="Ex.: 08:00 - 16:00 de segunda a sexta" required>
+                </div>
+
+                <div class="input-grouprc">
+                    <label id="label" for="capacidade">Capacidade</label>
+                    <select name="capacidade" id="capacidade" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="p">Pequeno (De 500 a 5.000 itens)</option>
+                        <option value="m">Medio (De 5.000 até 10.000 itens)</option>
+                        <option value="g">Grande (De 10.000 até 20.000 itens)</option>
+                        <option value="gg">Extra Grande (Mais de 20.000 itens)</option>
+                    </select>
+                </div>
+
+                <div class="input-grouprc">
+                    <label id="label" for="foco">Foco</label>
+                    <input type="checkbox" id="papel"> <label id="checkbox" for="papel">Papel</label>
+                    <input type="checkbox" id="metal"> <label id="checkbox" for="metal">Metal</label>
+                    <input type="checkbox" id="plastico"> <label id="checkbox" for="plastico">Plástico</label>
+                    <input type="checkbox" id="vidro"> <label id="checkbox" for="vidro">Vidro</label>
+                    <input type="checkbox" id="eletronico"> <label id="checkbox" for="eletronico">Eletrônicos</label>
+                    <input type="checkbox" id="outros"> <label id="checkbox" for="outros">Outros</label>
+                </div>
+            </div>
+
+                <div class="imagem">
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2289.4221889841347!2d-40.29931531936979!3d-20.353080543977693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb8160595555555%3A0xeab993fdd7de1f61!2sUniversidade%20Vila%20Velha%20-%20UVV!5e0!3m2!1spt-BR!2sbr!4v1749674346458!5m2!1spt-BR!2sbr"
+                    width="450px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="pos-navbar">
+                    <button class="button-add-ponto" onclick="alterarponto()">Alterar ponto</button>
+                    <button class="button-cancelar" onclick="window.location.href='./pontosdecoleta.html'">Cancelar</button>
+                </div>
+        </div>
+    </main>
+    
+    <script src="./recicla.js"></script>
+    
+</body>
+</html>
