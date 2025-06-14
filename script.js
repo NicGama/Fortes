@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('Username/Email:', usernameEmail);
             console.log('Password:', password);
 
-            if (usernameEmail === 'admin@fortes.com.br' && password === '123456') {
+            if (usernameEmail === 'cooperativas@fortes.com.br' && password === '123456') {
                 alert('Login bem-sucedido!');
                 window.location.href = './paginasrecicla/perfilrecicla.html';
             } else {
@@ -87,7 +87,7 @@ const loginFormong = document.querySelector('.login-ong form');
             console.log('Username/Email:', usernameEmailong);
             console.log('Password:', passwordong);
 
-            if (usernameEmailong === 'cooperativas@fortes.com.br' && passwordong === '123456') {
+            if (usernameEmailong === 'admin@fortes.com.br' && passwordong === '123456') {
                 alert('Login bem-sucedido!');
                 window.location.href = './paginasong/perfilong.html';
             } else {
